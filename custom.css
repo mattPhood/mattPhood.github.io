@@ -1,0 +1,64 @@
+html { 
+    overflow: auto; 
+} 
+  
+html, 
+body, 
+div, 
+iframe { 
+    margin: 0px; 
+    padding: 0px; 
+    height: 100%; 
+    border: none; 
+} 
+  
+iframe { 
+    display: block; 
+    width: 100%; 
+    border: none; 
+    overflow-y: auto; 
+    overflow-x: hidden; 
+} 
+
+
+.navbar {
+    min-height: 80px;
+  }
+  
+  .navbar-brand {
+    padding: 7 15px;
+    height: 80px;
+    line-height: 80px;
+  }
+  
+  .navbar-toggle {
+    /* (80px - button height 34px) / 2 = 23px */
+    margin-top: 23px;
+    padding: 9px 10px !important;
+  }
+  
+  @media (min-width: 768px) {
+    .navbar-nav > li > a {
+      /* (80px - line-height of 27px) / 2 = 26.5px */
+      padding-top: 26.5px;
+      padding-bottom: 26.5px;
+      line-height: 27px;
+    }
+  }
+  .navbar-custom { 
+    background-color: white; 
+}
+
+.hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: url("hero.jpg");
+  
+    /* Set a specific height */
+    height: 100%;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+  }
